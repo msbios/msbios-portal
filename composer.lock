@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5089a1cbdfe84fed010bbb7430089176",
+    "content-hash": "a315d3ba8441ca7abb7bf92ddbac8d41",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -865,6 +865,206 @@
                 "php"
             ],
             "time": "2017-08-10T12:12:13+00:00"
+        },
+        {
+            "name": "msbios/cpanel",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-cpanel.git",
+                "reference": "81498483f92a187b9f32affa4567fa11d0616364"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/81498483f92a187b9f32affa4567fa11d0616364",
+                "reference": "81498483f92a187b9f32affa4567fa11d0616364",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/guard": "^0.0.9",
+                "msbios/msbios": "^0.0.1",
+                "msbios/resource": "^0.0.1",
+                "msbios/theme": "^0.0.16",
+                "zendframework/zend-loader": "^2.5",
+                "zendframework/zend-modulemanager": "^2.8",
+                "zendframework/zend-servicemanager": "^3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\CPanel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios CPanel",
+            "homepage": "https://github.com/msbios/msbios-cpanel",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-08-10T13:45:47+00:00"
+        },
+        {
+            "name": "msbios/guard",
+            "version": "v0.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-guard.git",
+                "reference": "a7cd5977bcb3fe8a33315a53d288a46ce85c7f3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-guard/zipball/a7cd5977bcb3fe8a33315a53d288a46ce85c7f3c",
+                "reference": "a7cd5977bcb3fe8a33315a53d288a46ce85c7f3c",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/msbios": "^0.0.1",
+                "zendframework/zend-http": "^2.6",
+                "zendframework/zend-loader": "^2.5",
+                "zendframework/zend-permissions-acl": "^2.6",
+                "zendframework/zend-servicemanager": "^3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\Guard\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Guard",
+            "homepage": "https://github.com/msbios/msbios-guard",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-08-07T20:14:39+00:00"
+        },
+        {
+            "name": "msbios/guard-cpanel",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-guard-cpanel.git",
+                "reference": "a9873a0aedb684f8867245c64b221beb59dfef1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-cpanel/zipball/a9873a0aedb684f8867245c64b221beb59dfef1e",
+                "reference": "a9873a0aedb684f8867245c64b221beb59dfef1e",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/guard-resource": "^0.0.1",
+                "msbios/msbios": "^0.0.1",
+                "zendframework/zend-loader": "^2.5",
+                "zendframework/zend-modulemanager": "^2.8",
+                "zendframework/zend-servicemanager": "^3.3"
+            },
+            "require-dev": {
+                "msbios/cpanel": "^0.0.1",
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\Guard\\CPanel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Guard CPanel",
+            "homepage": "https://github.com/msbios/msbios-guard-cpanel",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-08-10T14:37:05+00:00"
+        },
+        {
+            "name": "msbios/guard-resource",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-guard-resource.git",
+                "reference": "2e17f8aa1a816383cb5499533682be2dbf42ce94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-resource/zipball/2e17f8aa1a816383cb5499533682be2dbf42ce94",
+                "reference": "2e17f8aa1a816383cb5499533682be2dbf42ce94",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/guard": "^0.0.9",
+                "msbios/msbios": "^0.0.1",
+                "msbios/resource": "^0.0.1",
+                "zendframework/zend-loader": "^2.5",
+                "zendframework/zend-modulemanager": "^2.8",
+                "zendframework/zend-servicemanager": "^3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\Guard\\Resource\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Guard Resource",
+            "homepage": "https://github.com/msbios/msbios-guard-resource",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-08-10T14:21:50+00:00"
         },
         {
             "name": "msbios/i18n",
@@ -2370,6 +2570,55 @@
                 "zf2"
             ],
             "time": "2016-04-11T21:18:13+00:00"
+        },
+        {
+            "name": "zendframework/zend-permissions-acl",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-permissions-acl.git",
+                "reference": "843bbd9c6f6d20b84dd0ce6c815d10397e98082b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-permissions-acl/zipball/843bbd9c6f6d20b84dd0ce6c815d10397e98082b",
+                "reference": "843bbd9c6f6d20b84dd0ce6c815d10397e98082b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5 || ^7.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "~4.0",
+                "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3"
+            },
+            "suggest": {
+                "zendframework/zend-servicemanager": "To support Zend\\Permissions\\Acl\\Assertion\\AssertionManager plugin manager usage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev",
+                    "dev-develop": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Permissions\\Acl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides a lightweight and flexible access control list (ACL) implementation for privileges management",
+            "homepage": "https://github.com/zendframework/zend-permissions-acl",
+            "keywords": [
+                "acl",
+                "zf2"
+            ],
+            "time": "2016-02-03T21:46:45+00:00"
         },
         {
             "name": "zendframework/zend-router",
