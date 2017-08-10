@@ -29,7 +29,7 @@
     "zendframework/zend-modulemanager": "^2.8",
     "msbios/msbios": "^0.0.1",
     "msbios/application": "^0.0.1",
-    "msbios/cpanel": "^0.0.1",
+    "msbios/cpanel": "^0.0.2",
     "msbios/guard-cpanel": "^0.0.1"
   },
   "require-dev": {
