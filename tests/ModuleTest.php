@@ -7,6 +7,8 @@ namespace MSBiosTest\Portal;
 
 use MSBios\Portal\Module;
 use PHPUnit\Framework\TestCase;
+use Zend\Loader\AutoloaderFactory;
+use Zend\Loader\StandardAutoloader;
 
 /**
  * Class ModuleTest
