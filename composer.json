@@ -30,12 +30,13 @@
     "zendframework/zend-mvc-plugin-flashmessenger": "^1.0",
     "msbios/msbios": "^0.0.1",
     "msbios/resource": "^0.0.1",
+    "msbios/authentication": "^0.0.3",
     "msbios/guard": "^0.0.9",
     "msbios/guard-resource": "^0.0.2",
-    "msbios/cpanel": "^0.0.3",
     "msbios/guard-cpanel": "0.0.2",
-    "msbios/authentication": "^0.0.3"
+    "msbios/cpanel": "^0.0.3"
   },
+
   "require-dev": {
     "phpunit/phpunit": "^5.7",
     "zendframework/zend-test": "^3.1",

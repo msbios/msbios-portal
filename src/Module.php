@@ -23,7 +23,7 @@ class Module implements ModuleInterface, AutoloaderProviderInterface
      */
     public function getConfig()
     {
-        return __DIR__ . '/../config/module.config.php';
+        return include __DIR__ . '/../config/module.config.php';
     }
 
     /**
