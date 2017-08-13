@@ -31,7 +31,7 @@
     "msbios/msbios": "^0.0.1",
     "msbios/resource": "^0.0.1",
     "msbios/authentication": "^0.0.3",
-    "msbios/guard": "^0.0.9",
+    "msbios/guard": "^0.0.10",
     "msbios/guard-resource": "^0.0.2",
     "msbios/guard-cpanel": "0.0.2",
     "msbios/cpanel": "^0.0.3"
