@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2174126408e3307fa76c7d9d5aac8b1",
+    "content-hash": "6944fbc18e3f3ddae8af07075fe81848",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -743,16 +743,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.5.7",
+            "version": "v2.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "22546a381144a957c00f17dc428ca33bc48ddecd"
+                "reference": "e3aa3f2d1d7ac4bc732f8630f78fcb92d2885e68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/22546a381144a957c00f17dc428ca33bc48ddecd",
-                "reference": "22546a381144a957c00f17dc428ca33bc48ddecd",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/e3aa3f2d1d7ac4bc732f8630f78fcb92d2885e68",
+                "reference": "e3aa3f2d1d7ac4bc732f8630f78fcb92d2885e68",
                 "shasum": ""
             },
             "require": {
@@ -815,7 +815,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2017-08-11T21:28:20+00:00"
+            "time": "2017-08-13T18:46:56+00:00"
         },
         {
             "name": "msbios/authentication",
@@ -921,16 +921,16 @@
         },
         {
             "name": "msbios/guard",
-            "version": "v0.0.10",
+            "version": "v0.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-guard.git",
-                "reference": "3d3f682a3971f3f5657a4fc355b96e87440317a2"
+                "reference": "a29dc962fbff78fa74c42ad0a809d272fd47ca2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-guard/zipball/3d3f682a3971f3f5657a4fc355b96e87440317a2",
-                "reference": "3d3f682a3971f3f5657a4fc355b96e87440317a2",
+                "url": "https://api.github.com/repos/msbios/msbios-guard/zipball/a29dc962fbff78fa74c42ad0a809d272fd47ca2e",
+                "reference": "a29dc962fbff78fa74c42ad0a809d272fd47ca2e",
                 "shasum": ""
             },
             "require": {
@@ -966,7 +966,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-13T09:00:50+00:00"
+            "time": "2017-08-14T09:05:04+00:00"
         },
         {
             "name": "msbios/guard-cpanel",
