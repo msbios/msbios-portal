@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7fc47f1ed66488ebf0d067a860eaf48e",
+    "content-hash": "412b17bbd6e741a70f46fd01549ba829",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -1018,16 +1018,16 @@
         },
         {
             "name": "msbios/guard-resource",
-            "version": "v0.0.4",
+            "version": "v0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-guard-resource.git",
-                "reference": "d4f286647f26e89cf183d21fdf77fad577ce5bbe"
+                "reference": "fac74191fad20cdea20fd198013e8aa5a3f6aaa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-guard-resource/zipball/d4f286647f26e89cf183d21fdf77fad577ce5bbe",
-                "reference": "d4f286647f26e89cf183d21fdf77fad577ce5bbe",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-resource/zipball/fac74191fad20cdea20fd198013e8aa5a3f6aaa2",
+                "reference": "fac74191fad20cdea20fd198013e8aa5a3f6aaa2",
                 "shasum": ""
             },
             "require": {
@@ -1065,7 +1065,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-15T09:24:30+00:00"
+            "time": "2017-08-15T09:54:23+00:00"
         },
         {
             "name": "msbios/msbios",
