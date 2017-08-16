@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "412b17bbd6e741a70f46fd01549ba829",
+    "content-hash": "620b93ae68e9298217917a89226575b9",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -1018,16 +1018,16 @@
         },
         {
             "name": "msbios/guard-resource",
-            "version": "v0.0.5",
+            "version": "v0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-guard-resource.git",
-                "reference": "fac74191fad20cdea20fd198013e8aa5a3f6aaa2"
+                "reference": "8513cb9945c53d5af5e2986c7f0e994245005fcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-guard-resource/zipball/fac74191fad20cdea20fd198013e8aa5a3f6aaa2",
-                "reference": "fac74191fad20cdea20fd198013e8aa5a3f6aaa2",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-resource/zipball/8513cb9945c53d5af5e2986c7f0e994245005fcd",
+                "reference": "8513cb9945c53d5af5e2986c7f0e994245005fcd",
                 "shasum": ""
             },
             "require": {
@@ -1065,7 +1065,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-15T09:54:23+00:00"
+            "time": "2017-08-16T12:39:41+00:00"
         },
         {
             "name": "msbios/msbios",
@@ -1423,16 +1423,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937"
+                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f29dca382a6485c3cbe6379f0c61230167681937",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
+                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
                 "shasum": ""
             },
             "require": {
@@ -1444,7 +1444,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -1478,7 +1478,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-09T14:24:12+00:00"
+            "time": "2017-06-14T15:44:48+00:00"
         },
         {
             "name": "zendframework/zend-authentication",
