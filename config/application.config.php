@@ -22,15 +22,20 @@ return [
         'Zend\Router',
         'Zend\Validator',
 
-        //'DoctrineModule',
-        //'DoctrineORMModule',
-        //'DoctrineDataFixtureModule',
+        'DoctrineModule',
+        'DoctrineORMModule',
 
         'MSBios\Assetic',
         'MSBios\Theme',
         'MSBios\Widget',
         'MSBios\Navigation',
         'MSBios\Application',
+        'MSBios\Guard',
+        'MSBios\Authentication',
+        'MSBios\CPanel',
+        'MSBios\Guard\CPanel',
+        'MSBios\Guard\Resource',
+        'MSBios\Resource'
     ],
 
     'module_listener_options' => [
