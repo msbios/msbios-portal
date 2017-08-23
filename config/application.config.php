@@ -35,7 +35,7 @@ return [
         'MSBios\CPanel',
         'MSBios\Guard\CPanel',
         'MSBios\Guard\Resource',
-        'MSBios\Resource'
+        'MSBios\Resource',
     ],
 
     'module_listener_options' => [

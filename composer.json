@@ -27,14 +27,13 @@
     "zendframework/zend-loader": "^2.5",
     "zendframework/zend-servicemanager": "^3.3",
     "zendframework/zend-modulemanager": "^2.8",
-    "zendframework/zend-mvc-plugin-flashmessenger": "^1.0",
     "msbios/msbios": "^0.0.1",
     "msbios/resource": "^0.0.1",
     "msbios/authentication": "^0.0.3",
-    "msbios/guard": "^0.0.11",
+    "msbios/guard": "^0.0.16",
+    "msbios/guard-cpanel": "^0.0.3",
     "msbios/guard-resource": "^0.0.6",
-    "msbios/guard-cpanel": "0.0.2",
-    "msbios/cpanel": "^0.0.3"
+    "msbios/cpanel": "^0.0.7"
   },
 
   "require-dev": {
@@ -42,9 +41,7 @@
     "zendframework/zend-test": "^3.1",
     "squizlabs/php_codesniffer": "^3.0",
     "zendframework/zend-mvc": "^3.1",
-    "msbios/application": "^0.1.4",
-    "msbios/assetic": "^0.0.1",
-    "kriswallsmith/assetic": "^1.4"
+    "msbios/application": "^0.1.5"
   },
   "scripts": {
     "cs-check": "phpcs",
