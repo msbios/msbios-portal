@@ -33,7 +33,7 @@
     "msbios/guard": "^0.0.16",
     "msbios/guard-resource": "^0.0.6",
     "msbios/guard-cpanel": "^0.0.3",
-    "msbios/cpanel": "^0.0.7"
+    "msbios/cpanel": "^0.0.8"
   },
 
   "require-dev": {
@@ -41,7 +41,8 @@
     "zendframework/zend-test": "^3.1",
     "squizlabs/php_codesniffer": "^3.0",
     "zendframework/zend-mvc": "^3.1",
-    "msbios/application": "^0.1.5"
+    "msbios/application": "^0.1.5",
+    "msbios/debug": "^0.0.3"
   },
   "scripts": {
     "cs-check": "phpcs",

@@ -36,6 +36,9 @@ return [
         'MSBios\Guard\CPanel',
         'MSBios\Guard\Resource',
         'MSBios\Resource',
+
+        'Zend\Log',
+        'ZendDeveloperTools',
     ],
 
     'module_listener_options' => [

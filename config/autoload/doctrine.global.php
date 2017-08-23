@@ -8,10 +8,10 @@ return [
         'connection' => [
             'orm_default' => [
                 'params' => [
-                    'host' => '',
-                    'user' => '',
-                    'password' => '',
-                    'dbname' => '',
+                    'host' => 'localhost',
+                    'user' => 'root',
+                    'password' => 'root',
+                    'dbname' => 'portal.dev',
                 ],
             ],
         ],
