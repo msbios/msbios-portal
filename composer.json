@@ -33,7 +33,7 @@
     "msbios/guard": "^0.0.16",
     "msbios/guard-resource": "^0.0.6",
     "msbios/guard-cpanel": "^0.0.3",
-    "msbios/cpanel": "^0.0.9"
+    "msbios/cpanel": "^0.0.10"
   },
 
   "require-dev": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c387938a987ed592f33eb26273742fb1",
+    "content-hash": "d508ab4ad060b0a2208bb36a04535687",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -870,16 +870,16 @@
         },
         {
             "name": "msbios/cpanel",
-            "version": "v0.0.9",
+            "version": "v0.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-cpanel.git",
-                "reference": "6a690641488ec5cee88402ed0e2ec288238cf5e5"
+                "reference": "f1484d53604c73325a63743e9e2d5e7585c28b28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/6a690641488ec5cee88402ed0e2ec288238cf5e5",
-                "reference": "6a690641488ec5cee88402ed0e2ec288238cf5e5",
+                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/f1484d53604c73325a63743e9e2d5e7585c28b28",
+                "reference": "f1484d53604c73325a63743e9e2d5e7585c28b28",
                 "shasum": ""
             },
             "require": {
@@ -922,7 +922,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-25T16:53:54+00:00"
+            "time": "2017-08-25T18:06:34+00:00"
         },
         {
             "name": "msbios/guard",
