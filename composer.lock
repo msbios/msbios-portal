@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b2c52b81c19266687b35e7769671641",
+    "content-hash": "e577805ce2b5725cd357d844b57985ff",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -869,17 +869,130 @@
             "time": "2017-08-06T19:30:18+00:00"
         },
         {
-            "name": "msbios/guard",
-            "version": "v0.0.16",
+            "name": "msbios/cpanel",
+            "version": "v0.0.19",
             "source": {
                 "type": "git",
-                "url": "https://github.com/msbios/msbios-guard.git",
-                "reference": "4c82d63b59dda100affc965628f716ada6e374e1"
+                "url": "https://github.com/msbios/msbios-cpanel.git",
+                "reference": "dd74f9f694bc25b3004ed471e0117fba3b92dade"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-guard/zipball/4c82d63b59dda100affc965628f716ada6e374e1",
-                "reference": "4c82d63b59dda100affc965628f716ada6e374e1",
+                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/dd74f9f694bc25b3004ed471e0117fba3b92dade",
+                "reference": "dd74f9f694bc25b3004ed471e0117fba3b92dade",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/msbios": "^0.0.1",
+                "zendframework/zend-loader": "^2.5",
+                "zendframework/zend-modulemanager": "^2.8",
+                "zendframework/zend-mvc-plugin-flashmessenger": "^1.0",
+                "zendframework/zend-servicemanager": "^3.3"
+            },
+            "require-dev": {
+                "msbios/application": "^0.1.5",
+                "msbios/authentication": "^0.0.3",
+                "msbios/debug": "^0.0.3",
+                "msbios/guard": "^0.0.17",
+                "msbios/guard-cpanel": "^0.0.3",
+                "msbios/guard-resource": "^0.0.6",
+                "msbios/resource": "^0.0.1",
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\CPanel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios CPanel",
+            "homepage": "https://github.com/msbios/msbios-cpanel",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-08-29T06:57:03+00:00"
+        },
+        {
+            "name": "msbios/cpanel-doctrine",
+            "version": "v0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-cpanel-doctrine.git",
+                "reference": "c92f543f449ec28e1265bd9685e7ec9a74b54586"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-cpanel-doctrine/zipball/c92f543f449ec28e1265bd9685e7ec9a74b54586",
+                "reference": "c92f543f449ec28e1265bd9685e7ec9a74b54586",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/msbios": "^0.0.1",
+                "zendframework/zend-loader": "^2.5",
+                "zendframework/zend-modulemanager": "^2.8",
+                "zendframework/zend-mvc-plugin-flashmessenger": "^1.0",
+                "zendframework/zend-servicemanager": "^3.3"
+            },
+            "require-dev": {
+                "msbios/application": "^0.1.5",
+                "msbios/authentication": "^0.0.3",
+                "msbios/cpanel": "^0.0.19",
+                "msbios/debug": "^0.0.3",
+                "msbios/guard": "^0.0.17",
+                "msbios/guard-cpanel": "^0.0.3",
+                "msbios/guard-resource": "^0.0.6",
+                "msbios/resource": "^0.0.1",
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\CPanel\\Doctrine\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios CPanel Doctrine",
+            "homepage": "https://github.com/msbios/msbios-cpanel-doctrine",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-08-29T07:13:57+00:00"
+        },
+        {
+            "name": "msbios/guard",
+            "version": "v0.0.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-guard.git",
+                "reference": "79ed4e8bae8908b6aa4e1ad0927edb72408d620b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-guard/zipball/79ed4e8bae8908b6aa4e1ad0927edb72408d620b",
+                "reference": "79ed4e8bae8908b6aa4e1ad0927edb72408d620b",
                 "shasum": ""
             },
             "require": {
@@ -917,7 +1030,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-21T17:31:14+00:00"
+            "time": "2017-08-27T19:18:56+00:00"
         },
         {
             "name": "msbios/guard-cpanel",
@@ -3169,119 +3282,6 @@
                 "php"
             ],
             "time": "2017-08-21T15:13:49+00:00"
-        },
-        {
-            "name": "msbios/cpanel",
-            "version": "v0.0.19",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/msbios/msbios-cpanel.git",
-                "reference": "dd74f9f694bc25b3004ed471e0117fba3b92dade"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/dd74f9f694bc25b3004ed471e0117fba3b92dade",
-                "reference": "dd74f9f694bc25b3004ed471e0117fba3b92dade",
-                "shasum": ""
-            },
-            "require": {
-                "msbios/msbios": "^0.0.1",
-                "zendframework/zend-loader": "^2.5",
-                "zendframework/zend-modulemanager": "^2.8",
-                "zendframework/zend-mvc-plugin-flashmessenger": "^1.0",
-                "zendframework/zend-servicemanager": "^3.3"
-            },
-            "require-dev": {
-                "msbios/application": "^0.1.5",
-                "msbios/authentication": "^0.0.3",
-                "msbios/debug": "^0.0.3",
-                "msbios/guard": "^0.0.17",
-                "msbios/guard-cpanel": "^0.0.3",
-                "msbios/guard-resource": "^0.0.6",
-                "msbios/resource": "^0.0.1",
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^3.0",
-                "zendframework/zend-test": "^3.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MSBios\\CPanel\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL"
-            ],
-            "authors": [
-                {
-                    "name": "Judzhin Miles",
-                    "email": "info@msbios.com"
-                }
-            ],
-            "description": "MSBios CPanel",
-            "homepage": "https://github.com/msbios/msbios-cpanel",
-            "keywords": [
-                "php"
-            ],
-            "time": "2017-08-29T06:57:03+00:00"
-        },
-        {
-            "name": "msbios/cpanel-doctrine",
-            "version": "v0.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/msbios/msbios-cpanel-doctrine.git",
-                "reference": "c92f543f449ec28e1265bd9685e7ec9a74b54586"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-cpanel-doctrine/zipball/c92f543f449ec28e1265bd9685e7ec9a74b54586",
-                "reference": "c92f543f449ec28e1265bd9685e7ec9a74b54586",
-                "shasum": ""
-            },
-            "require": {
-                "msbios/msbios": "^0.0.1",
-                "zendframework/zend-loader": "^2.5",
-                "zendframework/zend-modulemanager": "^2.8",
-                "zendframework/zend-mvc-plugin-flashmessenger": "^1.0",
-                "zendframework/zend-servicemanager": "^3.3"
-            },
-            "require-dev": {
-                "msbios/application": "^0.1.5",
-                "msbios/authentication": "^0.0.3",
-                "msbios/cpanel": "^0.0.19",
-                "msbios/debug": "^0.0.3",
-                "msbios/guard": "^0.0.17",
-                "msbios/guard-cpanel": "^0.0.3",
-                "msbios/guard-resource": "^0.0.6",
-                "msbios/resource": "^0.0.1",
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^3.0",
-                "zendframework/zend-test": "^3.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MSBios\\CPanel\\Doctrine\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL"
-            ],
-            "authors": [
-                {
-                    "name": "Judzhin Miles",
-                    "email": "info@msbios.com"
-                }
-            ],
-            "description": "MSBios CPanel Doctrine",
-            "homepage": "https://github.com/msbios/msbios-cpanel-doctrine",
-            "keywords": [
-                "php"
-            ],
-            "time": "2017-08-29T07:13:57+00:00"
         },
         {
             "name": "msbios/debug",
