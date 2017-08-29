@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c23af86b89563d22c947f59f12e61b3",
+    "content-hash": "fb0ed94542638558b3b3a7ba83e73775",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -926,16 +926,16 @@
         },
         {
             "name": "msbios/cpanel-doctrine",
-            "version": "v0.0.2",
+            "version": "v0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-cpanel-doctrine.git",
-                "reference": "c92f543f449ec28e1265bd9685e7ec9a74b54586"
+                "reference": "4cb223f866ea1954d9bd65cec1c0a83cbdd2ea9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-cpanel-doctrine/zipball/c92f543f449ec28e1265bd9685e7ec9a74b54586",
-                "reference": "c92f543f449ec28e1265bd9685e7ec9a74b54586",
+                "url": "https://api.github.com/repos/msbios/msbios-cpanel-doctrine/zipball/4cb223f866ea1954d9bd65cec1c0a83cbdd2ea9c",
+                "reference": "4cb223f866ea1954d9bd65cec1c0a83cbdd2ea9c",
                 "shasum": ""
             },
             "require": {
@@ -979,7 +979,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-29T07:13:57+00:00"
+            "time": "2017-08-29T18:43:42+00:00"
         },
         {
             "name": "msbios/guard",
