@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e577805ce2b5725cd357d844b57985ff",
+    "content-hash": "64d6147d150f2c3adf2c3349472af102",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -870,16 +870,16 @@
         },
         {
             "name": "msbios/cpanel",
-            "version": "v0.0.19",
+            "version": "v0.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-cpanel.git",
-                "reference": "dd74f9f694bc25b3004ed471e0117fba3b92dade"
+                "reference": "e37e7d9e77085c7e21bb25d9319c79a25f3c3f4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/dd74f9f694bc25b3004ed471e0117fba3b92dade",
-                "reference": "dd74f9f694bc25b3004ed471e0117fba3b92dade",
+                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/e37e7d9e77085c7e21bb25d9319c79a25f3c3f4f",
+                "reference": "e37e7d9e77085c7e21bb25d9319c79a25f3c3f4f",
                 "shasum": ""
             },
             "require": {
@@ -922,7 +922,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-29T06:57:03+00:00"
+            "time": "2017-08-29T09:25:09+00:00"
         },
         {
             "name": "msbios/cpanel-doctrine",
