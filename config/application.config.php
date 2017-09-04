@@ -33,9 +33,12 @@ return [
         'MSBios\Guard',
         'MSBios\Authentication',
         'MSBios\CPanel',
+        'MSBios\CPanel\Doctrine',
         'MSBios\Guard\CPanel',
+        'MSBios\Guard\CPanel\Doctrine',
         'MSBios\Guard\Resource',
         'MSBios\Resource',
+        'MSBios\Resource\Doctrine',
 
         'Zend\Log',
         'ZendDeveloperTools',
