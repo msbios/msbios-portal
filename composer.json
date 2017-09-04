@@ -28,15 +28,16 @@
     "zendframework/zend-servicemanager": "^3.3",
     "zendframework/zend-modulemanager": "^2.8",
     "msbios/msbios": "^0.0.1",
-    "msbios/resource": "^0.0.1",
-    "msbios/authentication": "^0.0.3",
-    "msbios/cpanel": "^0.0.21",
+    "msbios/resource": "^0.0.2",
+    "msbios/authentication": "^0.0.4",
+    "msbios/cpanel": "^0.0.22",
     "msbios/cpanel-doctrine": "^0.0.4",
     "msbios/guard": "^0.0.17",
-    "msbios/guard-resource": "^0.0.6",
-    "msbios/guard-cpanel": "^0.0.3",
+    "msbios/guard-resource": "^0.0.7",
+    "msbios/guard-cpanel": "^0.0.4",
     "msbios/guard-cpanel-doctrine": "^0.0.1",
-    "msbios/resource-doctrine": "^0.0.1"
+    "msbios/resource-doctrine": "^0.0.1",
+    "msbios/doctrine": "^0.0.1"
   },
 
   "require-dev": {
