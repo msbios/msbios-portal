@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1463bda718ea6192acea6254789650bf",
+    "content-hash": "9aef13f22d6b502a506668f234145356",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -1328,16 +1328,16 @@
         },
         {
             "name": "msbios/resource-doctrine",
-            "version": "v0.0.1",
+            "version": "v0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-resource-doctrine.git",
-                "reference": "7048f7f29f34a91f5fb3f5941955e3c2a3072f73"
+                "reference": "6819666c151f9ecc139fb7854d88a05a7e2005e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-resource-doctrine/zipball/7048f7f29f34a91f5fb3f5941955e3c2a3072f73",
-                "reference": "7048f7f29f34a91f5fb3f5941955e3c2a3072f73",
+                "url": "https://api.github.com/repos/msbios/msbios-resource-doctrine/zipball/6819666c151f9ecc139fb7854d88a05a7e2005e9",
+                "reference": "6819666c151f9ecc139fb7854d88a05a7e2005e9",
                 "shasum": ""
             },
             "require": {
@@ -1374,7 +1374,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-09-04T12:42:52+00:00"
+            "time": "2017-09-06T14:03:10+00:00"
         },
         {
             "name": "paragonie/random_compat",
