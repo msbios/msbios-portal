@@ -24,39 +24,52 @@
     }
   },
   "require": {
-    "zendframework/zend-loader": "^2.5",
-    "zendframework/zend-servicemanager": "^3.3",
-    "zendframework/zend-modulemanager": "^2.8",
-    "msbios/msbios": "^0.0.1",
-    "msbios/resource": "^0.0.2",
-    "msbios/authentication": "^0.0.4",
-    "msbios/cpanel": "^0.0.22",
-    "msbios/cpanel-doctrine": "^0.0.4",
-    "msbios/guard": "^0.0.17",
-    "msbios/guard-resource": "^0.0.7",
-    "msbios/guard-cpanel": "^0.0.4",
-    "msbios/guard-cpanel-doctrine": "^0.0.1",
-    "msbios/resource-doctrine": "^0.0.2",
-    "msbios/doctrine": "^0.0.1"
+    "zendframework/zend-component-installer": "^1.0 || ^0.7 || ^1.0.0-dev@dev",
+    "msbios/application": "~1.0",
+    "msbios/monolog": "~1.0",
+    "msbios/cpanel": "~1.0",
+    "msbios/cpanel-doctrine": "~1.0",
+    "msbios/guard-cpanel-doctrine": "~1.0"
   },
 
   "require-dev": {
     "phpunit/phpunit": "^5.7",
     "zendframework/zend-test": "^3.1",
     "squizlabs/php_codesniffer": "^3.0",
-    "zendframework/zend-mvc": "^3.1",
-    "msbios/application": "^0.1.5",
-    "msbios/debug": "^0.0.3"
+    "msbios/debug": "~1.0"
   },
   "scripts": {
     "cs-check": "phpcs",
     "cs-fix": "phpcbf",
+
     "test": [
       "@cs-check",
-      "phpunit"
+      "phpunit --colors=always"
+    ],
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+    "upload-coverage": "coveralls -v",
+    "cache":[
+      "rm -Rf data/cache/*.php",
+      "rm -Rf data/cache/*.dat",
+      "rm -Rf data/logs/*.log"
     ],
     "alter": "./vendor/bin/doctrine-module orm:schema-tool:update --force",
+    "themes": [
+      "cd bin && ln -s ../vendor/msbios/application/themes/default/public default",
+      "cd bin && ln -s ../vendor/msbios/cpanel/themes/limitless/public limitless"
+    ],
+    "deploy": [
+      "@cache",
+      "@alter",
+      "@themes"
+    ],
     "serve": "php -S 0.0.0.0:3107 -t bin bin/msbios-portal-module.php",
     "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push"
+
+  },
+  "extra": {
+    "zf": {
+      "component": "MSBios\\Portal"
+    }
   }
 }
