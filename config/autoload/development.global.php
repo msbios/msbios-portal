@@ -3,7 +3,7 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-namespace MSBios\Portal\Doctrine;
+namespace MSBios\Portal;
 
 return [
 
