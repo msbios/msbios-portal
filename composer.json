@@ -42,31 +42,18 @@
   "scripts": {
     "cs-check": "phpcs",
     "cs-fix": "phpcbf",
-
     "test": [
       "@cs-check",
       "phpunit --colors=always"
     ],
     "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
     "upload-coverage": "coveralls -v",
-    "cache":[
-      "rm -Rf data/cache/*.php",
-      "rm -Rf data/cache/*.dat",
-      "rm -Rf data/logs/*.log"
-    ],
-    "alter": "./vendor/bin/doctrine-module orm:schema-tool:update --force",
     "themes": [
       "cd bin && ln -s ../vendor/msbios/application/themes/default/public default",
       "cd bin && ln -s ../vendor/msbios/cpanel/themes/limitless/public limitless"
     ],
-    "deploy": [
-      "@cache",
-      "@alter",
-      "@themes"
-    ],
-    "serve": "php -S 0.0.0.0:3107 -t bin bin/msbios-portal-module.php",
+    "serve": "php -S 0.0.0.0:3107 -t public public/index.php",
     "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push"
-
   },
   "extra": {
     "zf": {

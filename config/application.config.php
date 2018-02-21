@@ -8,7 +8,9 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-        'MSBios\Test',
+        'MSBios\Db',
+        'Zend\Db',
+        'MSBios\Form',
         'Zend\Log',
         'Zend\Mvc\Plugin\FlashMessenger',
         'Zend\Form',
@@ -31,10 +33,8 @@ return [
         'MSBios\Resource',
         'MSBios\Guard\CPanel',
         'MSBios\Guard\Resource',
-        'MSBios\Resource\Doctrine',
-        'MSBios\Authentication\Doctrine',
         'MSBios\CPanel\Doctrine',
-        'MSBios\Guard\CPanel\Doctrine',
+        'MSBios\Test',
         'ZendDeveloperTools',
     ],
     'module_listener_options' => [
