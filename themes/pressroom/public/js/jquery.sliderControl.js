@@ -13,7 +13,7 @@
 	{
 		init : function(options){
 			return this.each(function(){
-				options = $.extend(defaults, options);
+				options = $.extend(false, defaults, options);
 				var self = $(this);
 				var expando = self.get(0)[jQuery.expando];
 				self.attr("id", "slider_" + expando);
@@ -33,9 +33,9 @@
 					self.children(".slide").each(function(index){
 						$(this).attr("id", "slide_" + expando + "_" + index);
 						if(index==0 && options.type!="small")
-							lastSlide = $("<li id='slider_posts_list_post_" + expando + "_" + index + "' style='width:" + (100/self.children().length) + "%;'><span class='date'>" + $("#slide_" + expando + "_" + index + " .date").text() + "</span><h5>" + $($("#slide_" + expando + "_" + index + " h2").html()).text() + "</h5></li>");
+							lastSlide = $("<li id='slider_posts_list_post_" + expando + "_" + index + "' style='width:" + (100/self.children().length) + "%;'><span class='date'>" + ($("#slide_" + expando + "_" + index + " .date").length ? $("#slide_" + expando + "_" + index + " .date").html() : '') + "</span><h5>" + $($("#slide_" + expando + "_" + index + " h2").html()).text() + "</h5></li>");
 						else
-							sliderPostsList.append($("<li id='slider_posts_list_post_" + expando + "_" + index + "' style='width:" + (100/self.children().length) + "%;'><span class='date'>" + $("#slide_" + expando + "_" + index + " .date").text() + "</span><h5>" + $($("#slide_" + expando + "_" + index + " h2").html()).text() + "</h5></li>"));
+							sliderPostsList.append($("<li id='slider_posts_list_post_" + expando + "_" + index + "' style='width:" + (100/self.children().length) + "%;'><span class='date'>" + ($("#slide_" + expando + "_" + index + " .date").length ? $("#slide_" + expando + "_" + index + " .date").html() : '') + "</span><h5>" + $($("#slide_" + expando + "_" + index + " h2").html()).text() + "</h5></li>"));
 					});
 					sliderPostsList.append(lastSlide);
 					
@@ -322,6 +322,7 @@
 						});
 					}
 				});*/
+				self.addClass("pr_initialized");
 			});
 		},
 		barAnimation: function(name, expando){

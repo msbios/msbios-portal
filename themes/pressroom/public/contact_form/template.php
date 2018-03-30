@@ -5,7 +5,7 @@ ob_start();
 	<head>
 	</head>
 	<body>
-		<div><b>Name</b>: <?php echo $values["name"] . " " . $values["name"]; ?></div>
+		<div><b>Name</b>: <?php echo $values["name"]; ?></div>
 		<div><b>E-mail</b>: <?php echo $values["email"]; ?></div>
 		<div><b>Message</b>: <?php echo nl2br($values["message"]); ?></div>
 	</body>

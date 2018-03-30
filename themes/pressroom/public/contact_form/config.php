@@ -1,7 +1,4 @@
 <?php
-define('_from_name', 'QuanticaLabs@gmail.com');
-define('_from_email', 'quanticalabs@gmail.com');
-
 define('_to_name', 'QuanticaLabs@gmail.com');
 define('_to_email', 'quanticalabs@gmail.com');
 

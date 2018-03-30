@@ -193,13 +193,13 @@ a.slider_control.down
 {
 	background-image: url("../images/icons/other/dark_bg/comment_reply.png");
 }
-.accordion .ui-accordion-header.ui-state-active .ui-accordion-header-icon
-{
-	background-image: url("../images/icons/navigation/high_contrast/accordion_arrow_up.png");
-}
 .accordion .ui-accordion-header:hover .ui-accordion-header-icon
 {
 	background-image: url("../images/icons/navigation/high_contrast/accordion_arrow_down_hover.png");
+}
+.accordion .ui-accordion-header.ui-state-active .ui-accordion-header-icon
+{
+	background-image: url("../images/icons/navigation/high_contrast/accordion_arrow_up.png");
 }
 .item_content .not_found
 {

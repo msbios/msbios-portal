@@ -4,10 +4,10 @@ require_once("config.php");
 if(isset($_POST["action"]) && $_POST["action"]=="contact_form")
 {
 	//contact form
-	require_once("../phpMailer/class.phpmailer.php");
+	require_once("../phpMailer/PHPMailerAutoload.php");
 	$result = array();
 	$result["isOk"] = true;
-	if($_POST["name"]!="" && $_POST["name"]!=_def_name && $_POST["email"]!="" && $_POST["email"]!=_def_email && preg_match("#^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$#", $_POST["email"]) && $_POST["message"]!="" && $_POST["message"]!=_def_message)
+	if($_POST["name"]!="" && $_POST["name"]!=_def_name && $_POST["email"]!="" && $_POST["email"]!=_def_email && preg_match("#^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,12})$#", $_POST["email"]) && $_POST["message"]!="" && $_POST["message"]!=_def_message)
 	{
 		$values = array(
 			"name" => $_POST["name"],
@@ -23,14 +23,16 @@ if(isset($_POST["action"]) && $_POST["action"]=="contact_form")
 
 		$mail->CharSet='UTF-8';
 
-		$mail->SetFrom($values["email"], $values["name"]);
+		$mail->SetFrom(_to_email, _to_name);
 		$mail->AddAddress(_to_email, _to_name);
+		$mail->AddReplyTo($values["email"], $values["name"]);
 
 		$smtp=_smtp_host;
 		if(!empty($smtp))
 		{
 			$mail->IsSMTP();
-			$mail->SMTPAuth = true; 
+			$mail->SMTPAuth = true;
+			//$mail->SMTPDebug  = 2;
 			$mail->Host = _smtp_host;
 			$mail->Username = _smtp_username;
 			$mail->Password = _smtp_password;
@@ -55,7 +57,7 @@ if(isset($_POST["action"]) && $_POST["action"]=="contact_form")
 		$result["isOk"] = false;
 		if($_POST["name"]=="" || $_POST["name"]==_def_name)
 			$result["error_name"] = _msg_invalid_data_name;
-		if($_POST["email"]=="" || $_POST["email"]==_def_email || !preg_match("#^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$#", $_POST["email"]))
+		if($_POST["email"]=="" || $_POST["email"]==_def_email || !preg_match("#^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,12})$#", $_POST["email"]))
 			$result["error_email"] = _msg_invalid_data_email;
 		if($_POST["message"]=="" || $_POST["message"]==_def_message)
 			$result["error_message"] = _msg_invalid_data_message;
