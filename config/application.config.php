@@ -8,13 +8,10 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-        'MSBios\Hydrator',
-        'MSBios\Cache',
+        'Zend\Paginator',
         'Zend\Cache',
         'Zend\Serializer',
-        'MSBios\Db',
         'Zend\Db',
-        'MSBios\Form',
         'Zend\Log',
         'Zend\Mvc\Plugin\FlashMessenger',
         'Zend\Form',
@@ -26,6 +23,12 @@ return [
         'Zend\Navigation',
         'Zend\Router',
         'Zend\Validator',
+
+        'MSBios\Validator',
+        'MSBios\Hydrator',
+        'MSBios\Cache',
+        'MSBios\Db',
+        'MSBios\Form',
         'MSBios\Assetic',
         'MSBios\Theme',
         'MSBios\Widget',
@@ -37,7 +40,6 @@ return [
         'MSBios\Resource',
         'MSBios\Guard\CPanel',
         'MSBios\Guard\Resource',
-        'MSBios\CPanel\Doctrine',
         'MSBios\Test',
         'ZendDeveloperTools',
     ],

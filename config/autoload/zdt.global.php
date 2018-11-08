@@ -2,11 +2,11 @@
 
 return [
     'zenddevelopertools' => [
-        /**
+        /*
          * General Profiler settings
          */
         'profiler' => [
-            /**
+            /*
              * Enables or disables the profiler.
              *
              * Expects: bool
@@ -14,7 +14,7 @@ return [
              */
             'enabled' => true,
 
-            /**
+            /*
              * Enables or disables the strict mode. If the strict mode is enabled, any error will throw an exception,
              * otherwise all errors will be added to the report (and shown in the toolbar).
              *
@@ -23,7 +23,7 @@ return [
              */
             'strict' => true,
 
-            /**
+            /*
              * If enabled, the profiler tries to flush the content before the it starts collecting data. This option
              * will be ignored if the Toolbar is enabled.
              *
@@ -35,7 +35,7 @@ return [
              */
             'flush_early' => false,
 
-            /**
+            /*
              * The cache directory is used in the version check and for every storage type that writes to the disk.
              * Note: The default value assumes that the current working directory is the application root.
              *
@@ -44,7 +44,7 @@ return [
              */
             'cache_dir' => 'data/cache',
 
-            /**
+            /*
              * If a matches is defined, the profiler will be disabled if the request does not match the pattern.
              *
              * Example: 'matcher' => array('ip' => '127.0.0.1')
@@ -54,7 +54,7 @@ return [
              */
             'matcher' => [],
 
-            /**
+            /*
              * Contains a list with all collector the profiler should run. Zend Developer Tools ships with
              * 'db' (Zend\Db), 'time', 'event', 'memory', 'exception', 'request' and 'mail' (Zend\Mail). If you wish to
              * disable a default collector, simply set the value to null or false.
@@ -65,7 +65,7 @@ return [
             'collectors' => [],
         ],
         'events' => [
-            /**
+            /*
              * Set to true to enable event-level logging for collectors that will support it. This enables a wildcard
              * listener onto the shared event manager that will allow profiling of user-defined events as well as the
              * built-in ZF events.
@@ -75,7 +75,7 @@ return [
              */
             'enabled' => true,
 
-            /**
+            /*
              * Contains a list with all event-level collectors that should run. Zend Developer Tools ships with 'time'
              * and 'memory'. If you wish to disable a default collector, simply set the value to null or false.
              *
@@ -84,7 +84,7 @@ return [
              */
             'collectors' => [],
 
-            /**
+            /*
              * Contains event identifiers used with the event listener. Zend Developer Tools defaults to listen to all
              * events. If you wish to disable the default all-inclusive identifier, simply set the value to null or
              * false.
@@ -94,11 +94,11 @@ return [
              */
             'identifiers' => [],
         ],
-        /**
+        /*
          * General Toolbar settings
          */
         'toolbar' => [
-            /**
+            /*
              * Enables or disables the Toolbar.
              *
              * Expects: bool
@@ -106,7 +106,7 @@ return [
              */
             'enabled' => true,
 
-            /**
+            /*
              * If enabled, every empty collector will be hidden.
              *
              * Expects: bool
@@ -114,7 +114,7 @@ return [
              */
             'auto_hide' => false,
 
-            /**
+            /*
              * The Toolbar position.
              *
              * Expects: string ('bottom' or 'top')
@@ -122,7 +122,7 @@ return [
              */
             'position' => 'bottom',
 
-            /**
+            /*
              * If enabled, the Toolbar will check if your current Zend Framework version is up-to-date.
              * Note: The check will only occur once every hour.
              *
@@ -131,7 +131,7 @@ return [
              */
             'version_check' => false,
 
-            /**
+            /*
              * Contains a list with all collector toolbar templates. The name  of the array key must be same as the name
              * of the collector.
              *

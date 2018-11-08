@@ -14,13 +14,12 @@ use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
  * Class Module
  * @package MSBios\Portal
  */
-class Module implements
-    ModuleInterface,
-    AutoloaderProviderInterface
+class Module implements ModuleInterface, AutoloaderProviderInterface
 {
 
     /** @const VERSION */
-    const VERSION = '1.0.6';
+    const VERSION = '1.0.7';
+
 
     /**
      * Returns configuration to merge with application configuration
@@ -29,8 +28,9 @@ class Module implements
      */
     public function getConfig()
     {
-        return include __DIR__ . '/../config/module.config.php';
-    }
+        return include __DIR__.'/../config/module.config.php';
+    }//end getConfig()
+
 
     /**
      * Return an array for passing to Zend\Loader\AutoloaderFactory.
@@ -40,11 +40,9 @@ class Module implements
     public function getAutoloaderConfig()
     {
         return [
-            AutoloaderFactory::STANDARD_AUTOLOADER => [
-                StandardAutoloader::LOAD_NS => [
-                    __NAMESPACE__ => __DIR__,
-                ],
-            ],
-        ];
-    }
-}
+                AutoloaderFactory::STANDARD_AUTOLOADER => [
+                                                           StandardAutoloader::LOAD_NS => [__NAMESPACE__ => __DIR__],
+                                                          ],
+               ];
+    }//end getAutoloaderConfig()
+}//end class
