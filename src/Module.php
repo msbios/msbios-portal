@@ -3,46 +3,35 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-namespace MSBios\Portal;
 
-use MSBios\ModuleInterface;
-use Zend\Loader\AutoloaderFactory;
-use Zend\Loader\StandardAutoloader;
-use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
+namespace MSBios\Portal;
 
 /**
  * Class Module
  * @package MSBios\Portal
  */
-class Module implements ModuleInterface, AutoloaderProviderInterface
+class Module extends \MSBios\Module
 {
-
     /** @const VERSION */
     const VERSION = '1.0.7';
 
+    /**
+     * @inheritdoc
+     *
+     * @return string
+     */
+    protected function getDir()
+    {
+        return __DIR__;
+    }
 
     /**
-     * Returns configuration to merge with application configuration
+     * @inheritdoc
      *
-     * @return array|\Traversable
+     * @return string
      */
-    public function getConfig()
+    protected function getNamespace()
     {
-        return include __DIR__.'/../config/module.config.php';
-    }//end getConfig()
-
-
-    /**
-     * Return an array for passing to Zend\Loader\AutoloaderFactory.
-     *
-     * @return array
-     */
-    public function getAutoloaderConfig()
-    {
-        return [
-                AutoloaderFactory::STANDARD_AUTOLOADER => [
-                                                           StandardAutoloader::LOAD_NS => [__NAMESPACE__ => __DIR__],
-                                                          ],
-               ];
-    }//end getAutoloaderConfig()
-}//end class
+        return __NAMESPACE__;
+    }
+}

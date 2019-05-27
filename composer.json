@@ -52,8 +52,7 @@
       "cd bin && ln -s ../vendor/msbios/application/themes/default/public default",
       "cd bin && ln -s ../vendor/msbios/cpanel/themes/limitless/public limitless"
     ],
-    "serve": "php -S 0.0.0.0:3107 -t public public/index.php",
-    "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push"
+    "serve": "php -S 0.0.0.0:3107 -t public public/index.php"
   },
   "extra": {
     "zf": {

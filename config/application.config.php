@@ -28,6 +28,7 @@ return [
         'MSBios\Hydrator',
         'MSBios\Cache',
         'MSBios\Db',
+        'MSBios\I18n',
         'MSBios\Form',
         'MSBios\Assetic',
         'MSBios\Theme',
@@ -41,6 +42,10 @@ return [
         'MSBios\Guard\CPanel',
         'MSBios\Guard\Resource',
         'MSBios\Test',
+        'MSBios\Permissions\Acl',
+        'MSBios\Session',
+        'MSBios\Portal',
+
         'ZendDeveloperTools',
     ],
     'module_listener_options' => [
